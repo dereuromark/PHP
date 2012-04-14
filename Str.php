@@ -21,6 +21,7 @@ final class Str {
 	
 	/**
 	 * Find the first occurrence of a string
+	 * Note: use iStr for CI
 	 * @return mixed
 	 */
 	final public static function str($needle, $haystack, $beforeNeedle  = false) {
@@ -56,14 +57,23 @@ final class Str {
 		
 	/**
 	 * Replace all occurrences of the search string with the replacement string
+	 * Note: use iReplace for CI
 	 * @return mixed
 	 */
 	final public static function replace($search, $replace, $subject, &$count = null) {
 		return str_replace($search, $replace, $subject, $count);
 	}
-		
+	
 	/**
-	 * Replace all occurrences of the search string with the replacement string
+	 * Case-insensitive version of str_replace()
+	 * @return mixed
+	 */
+	final public static function iReplace($search, $replace, $subject, &$count = null) {
+		return str_ireplace($search, $replace, $subject, $count);
+	}
+			
+	/**
+	 * Replace text within a portion of a string
 	 * @return mixed
 	 */
 	final public static function substrReplace($string, $replacement, $start, $length = null) {
@@ -89,7 +99,6 @@ final class Str {
 
 	/**
 	 * Binary safe comparison of two strings from an offset, up to length characters
-	 * TODO: maybe iCompare for CI - for consistency?
 	 * @return mixed
 	 */
 	final public static function iCompare($mainStr, $str, $offset = 0, $length = null) {
@@ -110,14 +119,6 @@ final class Str {
 	 */
 	final public static function rPos($needle, $haystack, $offset = 0) {
 		return strrpos($haystack, $needle, $offset);
-	}
-	
-	/**
-	 * Case-insensitive version of str_replace()
-	 * @return mixed
-	 */
-	final public static function iReplace($search, $replace, $subject, &$count = null) {
-		return str_ireplace($search, $replace, $subject, $count);
 	}
 	
 }
