@@ -7,7 +7,7 @@
 ## Idea
 Tries to overcome the issue with chaotic argument order for string php functions.
 
-Just read [php-function-naming-and-argument-order](1)
+Just read [1]
 and you know what this is all about.
 
 ## Basic improvements
@@ -62,4 +62,5 @@ You can then use the class like this:
 ## Feedback
 Any feedback/contribution is welcome.
 
-[1] http://www.skyrocket.be/2009/05/30/php-function-naming-and-argument-order
+
+	[1]: http://www.skyrocket.be/2009/05/30/php-function-naming-and-argument-order	"[php-function-naming-and-argument-order]"
