@@ -63,4 +63,4 @@ You can then use the class like this:
 Any feedback/contribution is welcome.
 
 
-	[1]: http://www.skyrocket.be/2009/05/30/php-function-naming-and-argument-order	"[php-function-naming-and-argument-order]"
+[1]: http://www.skyrocket.be/2009/05/30/php-function-naming-and-argument-order	"[php-function-naming-and-argument-order]"
