@@ -55,6 +55,9 @@ You can then use the class like this:
 * More tests
 * Speed comparison tests (compared to basic methods)
 
+## History
+
+* deprecated draft 0.1: removed the Php class in favor of Str class (without any array functions as they seem to be fine)
 
 ## Feedback
 Any feedback/contribution is welcome.
