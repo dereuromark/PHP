@@ -7,7 +7,7 @@
 ## Idea
 Tries to overcome the issue with chaotic argument order for string php functions.
 
-Just read [1]
+Just read [php-function-naming-and-argument-order] [1]
 and you know what this is all about.
 
 ## Basic improvements
