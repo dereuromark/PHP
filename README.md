@@ -23,31 +23,38 @@ and you know what this is all about.
 Put the Str class in a file `Str.php` and include it in your project:
 
 	require_once('/path/to/file/Str.php');
-	
+
 You can then use the class like this:
 
 	$string = Str::replace('needle', 'censored', 'haystack with needle and more');
-		
+
 
 ## Usage in CakePHP
 
 Put the Str class in:
 
 	/APP/Lib/Utility/Str.php
-	
+
 The test cases go in:
-	
+
 	/APP/Test/Case/Lib/Utility/StrTest.php
-	
+
 Import it in your bootstrap:
 
 	App::uses('Str', 'Utility');
-	
+
 You can then use the class like this:
 
 	$string = Str::replace('needle', 'censored', 'haystack with needle and more');
-	
-	
+
+## Deprecated
+This is now deprecated for CakePHP as it is now part of my Tools plugin
+https://github.com/dereuromark/tools
+
+You can use it as
+
+	App::uses('Str', 'Tools.Utility');
+
 ## TODO
 
 * Complete string methods
